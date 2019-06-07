@@ -1,0 +1,21 @@
+.team-list-bg {
+    background: top center/cover #101721;
+}
+.green-border {
+    border: 1px solid #0fb918;
+}
+.text-white {
+    color: #fff!important;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.text-success {
+    color: #0fb918!important;
+}
+.d-block {
+    display: block!important;
+}
+.round-corner{
+    border-radius: 5rem;
+}

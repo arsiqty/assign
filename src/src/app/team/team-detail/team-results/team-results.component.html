@@ -1,0 +1,62 @@
+<section class="container py-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 class="text-left">Games Played this Season</h4>
+      <div class="overflowX">
+        <table class="table table-responsive table-bordered d-table text-center table-stats">
+          <thead>
+            <tr>
+              <th>Grand final</th>
+              <th>venue</th>
+              <th>hgoals</th>
+              <th>hbehinds</th>
+              <th>updated</th>
+              <th>complete</th>
+              <th>hteam</th>
+              <th>abehinds</th>              
+              <th>date</th>
+              <th>winner</th>
+              <th>agoals</th>              
+              <th>ascore</th>              
+              <th>Final</th>
+              <th>ateam</th>    
+              <th>year</th>
+              <th>tz</th>
+              <th>round</th>
+                            
+            </tr>
+          </thead>
+          <!---->
+          <tbody class="ng-star-inserted">
+            <!---->
+          </tbody>
+          <tbody class="ng-star-inserted">
+            <!---->
+            <tr class="bg-ed ng-star-inserted" *ngFor="let games of game; let i = index">
+              
+               <td>{{games.is_grand_final}}</td>
+               <td>{{games.venue}}</td>
+               <td>{{games.hgoals}}</td>
+               <td>{{games.hbehinds}}</td>
+               <td>{{games.updated}}</td>
+               <td>{{games.complete}}</td>
+               <td>{{games.hteam}}</td>
+               <td>{{games.abehinds}}</td>              
+               <td>{{games.date}}</td>
+               <td>{{games.winner}}</td>
+               <td>{{games.agoals}}</td>               
+               <td>{{games.ascore}}</td>               
+               <td>{{games.is_final}}</td>
+               <td>{{games.ateam}}</td>    
+               <td>{{games.year}}</td>
+               <td>{{games.tz}}</td>
+               <td>{{games.round}}</td>
+            </tr>
+          </tbody>
+          <!---->
+        </table>
+      </div>
+      <!---->
+    </div>
+  </div>
+</section>

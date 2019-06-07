@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div *ngFor="let team of teams" class="row py-3 align-items-center border-bottom cusrsor-pointer">
+        <div class="col-sm-12 col-md-10">
+          <div class="media align-items-center">
+            <img class="d-flex round-corner align-self-end mr-3" height="60" width="60"
+              src="https://squiggle.com.au/{{team.logo}}">
+            <div class="media-body">
+              <h5 class="m-0 text-uppercase">{{team.name}}</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 border-left text-right"><button routerLink="/team-detail"
+            class="btn btn-success round-corner " type="button" (click)="navigateToDetail(team.id)">
+            View Details <i class="fas fa-info-circle"></i>
+          </button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div>
+
+  <table>
+  
+  <tr><th>Team</th><th>Logo</th></tr>
+  
+
+  <tr *ngFor="let team of teams">
+
+    <td>{{team.name}}</td>
+    <td><img src="https://squiggle.com.au/{{team.logo}}"></td>
+
+
+  </tr>
+
+  
+
+</table>
+  
+  </div>
+
+    <div>
+        <table style="text-align: center;">
+  
+            <tr><th>Home Team</th><th>Away Team</th><th>Score</th><th>Winner</th></tr>
+            
+          
+            <tr *ngFor="let game of games">
+          
+              <td>{{game.hteam}}</td>
+              <td>{{game.ateam}}</td>
+              <td>{{game.hscore}}-{{game.ascore}}</td>
+              <td>{{game.winner}}</td>
+          
+          
+            </tr>
+          
+            
+          
+          </table>
+    </div> -->

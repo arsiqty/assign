@@ -1,0 +1,61 @@
+<section class="team-list-bg py-5">
+    <div class="container" >
+        <div class=" media align-items-center row">
+            <div class="col-sm-7 d-flex justify-content-between align-items-center"><img
+                    class="d-flex round-corner green-border p-1 align-self-end mr-3" height="120" width="120"
+                    src="https://squiggle.com.au/{{teamDetails.logo}}"
+                    alt="">
+                <div class="media-body text-white">
+                    <h3 class="m-0 text-uppercase">{{teamDetails.name}}</h3>
+                    <p class="mb-0 text-white"><span class="text-success">{{teamDetails.abbrev}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid tournament text-center border-bottom">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="prediction-tab" data-toggle="tab" href="#prediction" role="tab"
+                        aria-controls="prediction" aria-selected="true">Prediction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gamesPlayed-tab" data-toggle="tab" href="#gamesPlayed" role="tab"
+                        aria-controls="gamesPlayed" aria-selected="false">Games played this season</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nextFive-tab" data-toggle="tab" href="#nextFive" role="tab"
+                        aria-controls="nextFive" aria-selected="false">Next five matches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gamesthisSeason-tab" data-toggle="tab" href="#gamesthisSeason" role="tab"
+                        aria-controls="gamesthisSeason" aria-selected="false">Games so far this season</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Headtohead-tab" data-toggle="tab" href="#Headtohead" role="tab"
+                        aria-controls="Headtohead" aria-selected="false">Head to head games</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="prediction" role="tabpanel" aria-labelledby="prediction-tab">
+                    <app-team-prediction></app-team-prediction>
+                </div>
+                <div class="tab-pane fade" id="gamesPlayed" role="tabpanel" aria-labelledby="gamesPlayed-tab">
+                    <app-team-results></app-team-results>
+                </div>
+                <div class="tab-pane fade" id="nextFive" role="tabpanel" aria-labelledby="nextFive-tab">
+                    <app-team-opponents></app-team-opponents>
+                </div>
+                <div class="tab-pane fade" id="gamesthisSeason" role="tabpanel" aria-labelledby="gamesthisSeason-tab">
+                    <app-games-hosting></app-games-hosting>
+                </div>
+                <div class="tab-pane fade" id="Headtohead" role="tabpanel" aria-labelledby="Headtohead-tab">
+                    <app-teams-rivival></app-teams-rivival>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+<section class="container py-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 class="text-left">Prediction</h4>
+      <div class="overflowX">
+        <table class="table table-responsive table-bordered d-table text-center table-stats">
+          <thead>
+            <tr>
+              <th>Percentage</th>
+              <th>Mean Rank</th>
+              <th>Rank</th>
+              <th>Wins</th>
+              <th>Round</th>
+              <th>Year</th>
+              <th>Updated</th>
+              <th>Team</th>              
+            </tr>
+          </thead>
+          <!---->
+          <tbody class="ng-star-inserted">
+            <!---->
+          </tbody>
+          <tbody class="ng-star-inserted">
+            <!---->
+            <tr class="bg-ed ng-star-inserted" *ngFor="let pred of predictionsDetails">
+              <td>{{pred.percentage}}</td>
+              <td>{{pred.mean_rank}}</td>
+              <td>{{pred.rank}}</td>
+              <td>{{pred.wins}}</td>
+              <td>{{pred.round}}</td>
+              <td>{{pred.year}}</td>
+              <td>{{pred.updated}}</td>
+              <td>{{pred.team}}</td>
+            </tr>
+          </tbody>
+          <!---->
+        </table>
+      </div>
+      <!---->
+    </div>
+  </div>
+</section>
